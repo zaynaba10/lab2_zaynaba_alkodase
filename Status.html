@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/dachboard.css">
+  <title>Dashboard</title>
+</head>
+<body>
+    <div class="content">
+        <aside>
+            <div class="sidebar" id="Sidebar">
+                <div class="sidebar-p">
+                    <div class="sidebar-header">
+                        <div class="sidbar-header-cont">
+                            <img src="src/assets/Logo.png" class="logo" alt="Logo">
+                            <div id="nav-dachboar-Button" class="nav-dachboard-Button">
+                                <i class="fa-solid fa-bars fa-2x" style="color:#344054;" id="navToggleDach" aria-hidden="true"></i>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/home-line.png" alt="icon"><span>Hoofdpagina</span></a></li>
+                            <li><a href="Dashboard.html"><img src="src/assets/bar-chart-01.png" alt="icon">Overzicht</a></li>
+                            <li><a href="Status.html"><img src="src/assets/bar-chart-square-02.png" alt="icon">Status</a></li>
+                            <li>
+                                <div class="dropdown-nav-dach">
+                                    <div class="dropbtn" id="dropdownDac"><img src="src/assets/users-01.png" alt="icon">Vertrouwenspersonen<i class="fa-solid fa-chevron-down " id="iconChevronDrop"></i></div>
+                                    <div class="dropdown-content" id="dropbtnContent">
+                                    <a href="#">Overview</a>
+                                    <a href="#">Notifications</a>
+                                    <a href="#">Analytics</a>
+                                    <a href="#">reports</a>
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-p">
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/life-buoy-01.png" alt="icon">Contact</a></li>
+                            <li><a href="Dashboard4.html"><img src="src/assets/settings-01.png" alt="icon">Instellingen</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <img src="src/assets/Avatarx2.png" alt="Profile Image" />
+                        <div class="user-detail">
+                          <h3>Olivia Rhye</h3>
+                          <span>olivia@hotmail.com</span>
+                        </div>
+                        <div class="profilelog-out"><img src="src/assets/Button-log-out.png" alt="button log out"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="main-content">
+            <div class="content-hdr">
+                <div>
+                    <h1>Medische inlichtingenformulier!</h1>
+                    <div>Start de aanvraag zorgtoeslag met het invullen van het psychosociaal inlichtingsformulier.</span></div>
+                </div>
+                <div class="content-hdr-r">
+                    <img src="src/assets/search-lg.png" alt="">
+                    <button><img src="src/assets/filter-lines.png" alt="">Filters</button>
+                </div>
+            </div>
+            <div class="table-Status">
+                <div class="Filters">
+                    <div class="">
+                        <div style="color:#344054;font-weight:600;">Jouw aanvraag</div>
+                        <div style="margin-top:5px;color:#475467;">Hieronder vind je de status van je aanvraag voor zorgtoeslag per kind. Druk op ‘Zie meer’ om de status te volgen.</div>
+                    </div>
+                    <div class="search-filter-t">
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                        <div class="content-hdr-r">
+                            <button><img src="src/assets/plusg.png" alt=""></button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="request">
+                <div class="req-profil">
+                    <div class="img-profil-re">
+                        <img src="src/assets/Image(5).png" alt="image">
+                    </div>
+                    <div>
+                        <div class="name-re">Kaat Vermeiren</div>
+                        <div class="id-re">04090468982029</div>
+                    </div>
+                </div>
+                <div style=" padding:25px;">
+                    <div style="color: #475467;"><span>1e aanvraag</span></div>
+                    <div style="margin-top:10px;color:#101828;"><span>Wachten op verzoek van aanvraag</span></div>
+                </div>
+                <div class="Zie-meer">
+                    <div style="font-weight: 600;color:#475467;">Status</div>
+                    <div class="buttonZiemeer" id="ButtonZiemeer">Zie meer<span> <i class="fa-solid fa-chevron-down fa-1x" id="ChevronZie"></i></span></div>
+                </div>
+                <div class="timeline-t hidden-timeline" id="Timeline">
+                    <div class="timeline-t-item">
+                        <div class="timeline-circle-t timeline-item-active">
+                            <div class="circle-t"></div>
+                            <div class="timeline-line-t"></div>
+                        </div>
+                        <div class="timeline-date-t">
+                            <span class="timeline-title">Aanvraagdatum</span>
+                            <span class="timeline-date">20 maart 2024</span>
+                        </div>
+                    </div>
+                    <div class="timeline-t-item">
+                        <div class="timeline-circle-t">
+                            <div class="circle-t"></div>
+                            <div class="timeline-line-t"></div>
+                        </div>
+                        <div class="timeline-date-w-open">
+                            <div class="timeline-date-t">
+                                <span class="timeline-title">Psychosociaal inlichtingsformulier</span>
+                                <span class="timeline-date">Niet ontvangen</span>
+                            </div>
+                            <div class="timeline-btn"><div class="timeline-btn-open">Open <i class="fa-solid fa-chevron-right "></i></div></div>
+                        </div>
+                    </div>
+                    <div class="timeline-t-item">
+                        <div class="timeline-circle-t">
+                            <div class="circle-t"></div>
+                            <div class="timeline-line-t"></div>
+                        </div>
+                        <div class="timeline-date-w-open">
+                            <div class="timeline-date-t">
+                                <span class="timeline-title">Medische inlichtingsformulier</span>
+                                <span class="timeline-date">Niet ontvangen</span>
+                            </div>
+                            <div class="timeline-btn"><div class="timeline-btn-open">Open <i class="fa-solid fa-chevron-right "></i></div></div>
+                        </div>
+                    </div>
+                    <div class="timeline-t-item">
+                        <div class="timeline-circle-t">
+                            <div class="circle-t"></div>
+                        </div>
+                        <div class="timeline-date-w-open">
+                            <div class="timeline-date-t">
+                                <span class="timeline-title">Status</span>
+                                <span class="timeline-date">Lopend</span>
+                            </div>
+                            <div class="timeline-btn"><div class="timeline-btn-open">Open <i class="fa-solid fa-chevron-right "></i></div></div>
+                        </div>
+                    </div>
+                    <div style="color:#475467;margin-top:15px;font-weight:600;font-size:14px;">Uiterste indieningsdatum: 26-12-2024</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        let ButtonZiemeer = document.getElementById('ButtonZiemeer');
+        let Timeline = document.getElementById('Timeline');
+        let ChevronZie = document.getElementById('ChevronZie');
+        ButtonZiemeer.addEventListener('click',function(){
+            if(Timeline.classList.contains("hidden-timeline")){
+                Timeline.classList.remove("hidden-timeline");
+                ChevronZie.classList.remove("fa-chevron-down");
+                ChevronZie.classList.add("fa-chevron-up");
+
+            }
+            else{
+                Timeline.classList.add("hidden-timeline");
+                ChevronZie.classList.add("fa-chevron-down");
+                ChevronZie.classList.remove("fa-chevron-up");
+            }
+        });
+    </script>
+    <script src="src/dachbord.js"></script>
+     <!--Font Awesome icons-->
+     <script src="https://kit.fontawesome.com/4d740552dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

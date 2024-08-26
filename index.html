@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veerkracht</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="body" id="body">
+    <div  class="container">
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-menu-logo">
+                    <div class="logo">
+                        <a href="#"><img src="src/assets/Logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav-toggle" >
+                        <i class="fa-solid fa-bars fa-2x" style="color:#344054;" id="navToggle"></i>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn"><span>Zorgtoeslag</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <div class="content-drop-1">
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-book fa-2x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Rechtopeenzorgtoeslag">Recht op een zorgtoeslag</a></div>
+                                            <span>Of jouw gezin in aanmerking komt, wordt getoetst a.d.h.v. 3 pijlers.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-calculator fa-2x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Zorgtoeslagberekenen">Zorgtoeslag berekenen</a></div>
+                                            <span>Wil je het bedrag van je zorgtoeslag berekenen?</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-clipboard fa-2x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Zorgtoeslagaanvragen">Zorgtoeslag aanvragen</a></div>
+                                            <span>Via het portaal van Veerkracht</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-circle-question fa-2x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Vragen">Vragen?</a></div>
+                                            <span>Meer vragen over de zorgtoeslag.</span>
+                                        </div>
+                                    </li>              
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn"><span>Over Veerkracht</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <div class="content-drop w-700">
+                                    <div class="drop-item"> 
+                                        <div class="drop-title"><span>Veerkracht</span></div>
+                                        <div class="drop-questions">
+                                            <div><a href=""><img src="src/assets/info-circle.png" alt="icon" class="icon">Wie zijn wij en wat doen wij?</a></div>
+                                            <div><a href=""><img src="src/assets/message-chat-square.png" alt="icon"  class="icon">Verhalen van medewerkers</a></div>
+                                            <div><a href=""><img src="src/assets/globe-02.png" alt="icon"  class="icon">Projecten</a></div>
+                                            <div><a href=""><img src="src/assets/image-indent-right.png" alt="icon"  class="icon">Nieuws en pers</a></div>
+                                            <div><a href=""><img src="src/assets/briefcase-01.png" alt="icon"  class="icon">Werken voor Opgroeien</a></div>
+                                        </div>  
+                                    </div>
+                                    <div class="drop-item">
+                                        <div class="drop-title"><span>In de kijker</span></div>
+                                        <div class="drop-Draw-container">
+                                            <div class="drop-Draw">
+                                                <img src="src/assets/Image(3).png" alt="image">
+                                                <div class="drop-con">
+                                                    <div style="font-weight:600;">Zorgen voor mama</div>
+                                                    <div style="color:#475467;font-size:14px;">Claudia Di Vaio werkt als sociaal werker bij Opgroeien. Je zag haar aan het werk in Zorgen voor mama op Eén.</div>
+                                                    <a href="#"><span class="drop_link">Alle projecten<i class="fa-solid fa-arrow-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="drop-Draw">
+                                                <img src="src/assets/Image(4).png" alt="image">
+                                                <div class="drop-con">
+                                                    <div style="font-weight:600;">Wij zijn op zoek naar 100+ nieuwe collega’s!</div>
+                                                    <a href="#"><span class="drop_link">Bekijk onze vacatures<i class="fa-solid fa-arrow-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="drop-Draw">
+                                                <img src="src/assets/Image(3).png" alt="image">
+                                                <div class="drop-con">
+                                                    <div style="font-weight:600;">Zorgen voor mama</div>
+                                                    <div style="color:#475467;font-size:14px;">Claudia Di Vaio werkt als sociaal werker bij Opgroeien. Je zag haar aan het werk in Zorgen voor mama op Eén.</div>
+                                                    <a href="#"><span class="drop_link">Lees het verhaal<i class="fa-solid fa-arrow-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="Navbuttons">
+                    <button onclick="window.location.href='login.html';">Log in</button>
+                    <button>Registreer</button>
+                </div>
+                <div class="mobileNav " id="mobileNav">
+                    
+                    <ul class="nav-menu-mobile">
+                        <div class="nav-toggle" style="display:flex;justify-content:end;width: 100%;" >
+                            <div><i class="fa-solid fa-xmark fa-2x" style="color:#344054;z-index:99;" id="navClose"></i></div>
+                        </div>
+                        <li><a href="">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn"><span>Zorgtoeslag</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <div class="content-drop-1">
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-book fa-1x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Rechtopeenzorgtoeslag">Recht op een zorgtoeslag</a></div>
+                                            <span>Of jouw gezin in aanmerking komt, wordt getoetst a.d.h.v. 3 pijlers.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-calculator fa-1x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div >
+                                            <div ><a href="#Zorgtoeslagberekenen">Zorgtoeslag berekenen</a></div>
+                                            <span>Wil je het bedrag van je zorgtoeslag berekenen ?</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-clipboard fa-1x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Zorgtoeslagaanvragen">Zorgtoeslag aanvragen</a></div>
+                                            <span>Via het portaal van Veerkracht.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icons-d">
+                                            <i class="fa-solid fa-circle-question fa-1x" style="color: #7F56D9;opacity:0.9;"></i>
+                                        </div>
+                                        <div>
+                                            <div><a href="#Vragen">Vragen?</a></div>
+                                            <span>Meer vragen over de zorgtoeslag.acybeleid vinden wij uw gegevens Start danvraag.</span>
+                                        </div>
+                                    </li>              
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn"><span>Over Veerkracht</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <div class="content-drop ">
+                                    <div class="drop-item"> 
+                                        <div class="drop-title"><span>Veerkracht</span></div>
+                                        <div class="drop-questions">
+                                            <div><a href=""><img src="src/assets/info-circle.png" alt="icon" class="icon">Wie zijn wij en wat doen wij?</a></div>
+                                            <div><a href=""><img src="src/assets/message-chat-square.png" alt="icon"  class="icon">Verhalen van medewerkers</a></div>
+                                            <div><a href=""><img src="src/assets/globe-02.png" alt="icon"  class="icon">Projecten</a></div>
+                                            <div><a href=""><img src="src/assets/image-indent-right.png" alt="icon"  class="icon">Nieuws en pers</a></div>
+                                            <div><a href=""><img src="src/assets/briefcase-01.png" alt="icon"  class="icon">Werken voor Opgroeien</a></div>
+                                        </div>  
+                                    </div>
+                                    <div class="drop-item">
+                                        <div class="drop-title"><span>In de kijker</span></div>
+                                        <div class="drop-Draw-container">
+                                            <div class="drop-Draw">
+                                                <img src="src/assets/Image(3).png" alt="image">
+                                                <div class="drop-con">
+                                                    <div style="font-weight:600;">Zorgen voor mama</div>
+                                                    <div style="color:#475467;font-size:14px;" class="display-none-9">Claudia Di Vaio werkt als sociaal werker bij Opgroeien. Je zag haar aan het werk in Zorgen voor mama op Eén.</div>
+                                                    <a href="#"><span class="drop_link">Alle projecten<i class="fa-solid fa-arrow-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="drop-Draw">
+                                                <img src="src/assets/Image(4).png" alt="image">
+                                                <div class="drop-con">
+                                                    <div style="font-weight:600;" >Wij zijn op zoek naar 100+ nieuwe collega’s!</div>
+                                                    <a href="#"><span class="drop_link">Bekijk onze vacatures<i class="fa-solid fa-arrow-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="drop-Draw">
+                                                <img src="src/assets/Image(3).png" alt="image">
+                                                <div class="drop-con">
+                                                    <div style="font-weight:600;">Zorgen voor mama</div>
+                                                    <div style="color:#475467;font-size:14px;" class="display-none-9">Claudia Di Vaio werkt als sociaal werker bij Opgroeien. Je zag haar aan het werk in Zorgen voor mama op Eén.</div>
+                                                    <a href="#"><span class="drop_link">Lees het verhaal<i class="fa-solid fa-arrow-right"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="/login.html" style="color: #7F56D9;">Log in</a></li>
+                        <li><a href="" style="color: #7F56D9;">Registreer</a></li>
+                    </ul>
+                </div>   
+            </nav>
+            <div class="Hsection">
+                <div class="hero">
+                    <div>
+                    <h1>Veerkracht.</h1>
+                    <span>het startpunt voor ondersteuning en groei</span>
+                    </div>
+                    <form>
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/Helpicon.png" class="icon" alt="icon">
+                                <input type="email" class="input" placeholder="Voer uw e-mailadres in." />
+                            </label>
+                            <button type="submit" value="Submit" class="button">Start aanvraag</button>
+                        </div>
+                        <span>In ons <u>privacybeleid</u> vinden wij uw gegevens belangrijk.</span>
+                    </form>
+                </div>
+                <div class="heorImg">
+                    <img src="src/assets/Cardhero.png" alt="">
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="zorgtoeslag">
+                <hr class="line">
+                <span class="titlespan">In samenwerking met de Vlaamse Overheid</span>
+                <h1 class="titleh2">Maak kennis met de zorgtoeslag</h1>
+                <p>Je kan een zorgtoeslag aanvragen als je kind langdurig ziek is of specifieke ondersteuningsbehoeftes heeft. Ontdek hier de voorwaarden voor een zorgtoeslag in je Groeipakket. Voldoe je aan de voorwaarden? Dan kan je ook het bedrag van de zorgtoeslag berekenen.</p>
+                <a href="#" class="button">Start je aanvraag<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="question">
+                <hr class="line">
+                <div class="partone marg-90" id="Rechtopeenzorgtoeslag">
+                    <span class="titlespan">Recht op een zorgtoeslag</span>
+                    <h2 class="titleh2">Wanneer heb je recht op de zorgtoeslag ?</h2>
+                    <p class="">
+                        Sommige gezinnen hebben extra ondersteuning nodig. Wanneer een kindje langdurig ziek is bijvoorbeeld. Of wanneer het door zijn of haar persoonlijkheid meer begeleiding vraagt. Het Groeipakket voorziet dan in extra steun om de zorg financieel draaglijker te maken: een zorgtoeslag.
+                    </p>
+                    <p>Of jouw gezin in aanmerking komt, wordt getoetst aan de hand van <span style="font-weight: 800;">3 pijlers</span>:</p>
+                </div>
+                <div class="parttwo" >
+                    <div class="pillars">
+                        <div class="pillar">
+                            <div class="circle">1</div>
+                            <span>De lichamelijke en geestelijke gevolgen van de beperking, aandoening of ziekte van je kind</span>
+                        </div>
+                        <div class="pillar">
+                            <div class="circle">2</div>
+                            <span>De invloed op het dagelijkse leven van je kind, bijvoorbeeld op het vlak van mobiliteit en leervermogen</span>
+                        </div>
+                        <div class="pillar">
+                            <div class="circle">3</div>
+                            <span>De invloed op je gezin, zoals medische behandeling en noodzakelijke verplaatsingen</span>
+                        </div>
+                        <div >
+                            <div class="font-text-20" style="color:#101828;">De evaluerende arts van <u style="color:#7F56D9;">Agentschap Opgroeien</u> kent aan elke pijler punten toe.</div>
+                            <span style="color:#344054;">Je kind heeft recht op een zorgtoeslag vanaf 4 punten in pijler 1 of vanaf 6 punten in de 3 pijlers samen.</span>
+                        </div>
+                    </div>
+                    <div class="pillar-img">
+                        <img src="src/assets/image2.png" alt="image">
+                    </div>
+                </div>
+                <div class="center" style="margin-top:120px;">
+                    <a href="#" class="button justbet" >Start je aanvraag<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="partone question">
+                    <hr class="line">
+                    <span class="titlespan " style="margin-top:50px;" id="Zorgtoeslagberekenen">Zorgtoeslag berekenen</span>
+                    <h2 class="titleh2">Hoeveel zorgtoeslag krijg je?</h2>
+                    <p class="">
+                        Wil je het bedrag van je zorgtoeslag berekenen? Dat is afhankelijk van een puntensysteem. Dit puntensysteem bestaat uit 3 pijlers. De som van het aantal punten van de 3 pijlers bepaalt het bedrag van de zorgtoeslag.
+                    </p>
+                    <p>
+                        Hieronder zie je een overzicht van welk bedrag je recht hebt bij elk aantal punten. Zo kan je jouw zorgtoeslag alvast berekenen. Let op: het beoordelen van het aantal punten gebeurt door Agentschap Opgroeien. Aan de hand van die punten berekent MyFamily het bedrag aan zorgtoeslag.
+                    </p>
+                    <div class="table-wrapper">
+                        <table class="fl-table">
+                            <thead>
+                            <tr>
+                                <th>Aantal punten 3 pijlers samen</th>
+                                <th>Aantal punten 1ste pijler</th>
+                                <th>Bedragen</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>0 — 5</td><td>4 of meer</td><td>89,16 euro</td></tr>
+                            <tr><td>6 — 8</td><td>0 — 3</td><td>118,74 euro</td></tr>
+                            <tr><td>6 — 8</td><td>4 of meer</td><td>457,39 euro</td></tr>
+                            <tr><td>9 — 11</td><td>0 — 3</td><td>277,09 euro</td></tr>
+                            <tr><td>9 — 11</td><td>4 of meer</td><td>457,39 euro</td></tr>
+                            <tr><td>12 — 14</td><td>niet van toepassing</td><td>457,39 euro</td></tr>
+                            <tr><td>15 — 17</td><td>niet van toepassing</td><td>520,09 euro</td></tr>
+                            <tr><td>18 — 20</td><td>niet van toepassing</td><td>557,24 euro</td></tr>
+                            <tr><td>21 of meer</td><td>niet van toepassing</td><td>594,38 euro</td></tr>
+                            <tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="center" style="margin-top:50px;">
+                <a href="#" class="button justbet">Start je aanvraag<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="partthree" id="Zorgtoeslagaanvragen">
+                <hr class="line">
+                <span class="titlespan" style="margin-top:100px;" >Zorgtoeslag aanvragen</span>
+                <h1 class="titleh2">Hoe kan je een zorgtoeslag aanvragen?</h1>
+                <p class="textfour">Veerkracht helpt je om zo gemakkelijk mogelijk je aanvraag te starten?</p>
+                    <div class="request">
+                        <div class="Step">
+                            <div class="square">1</div>
+                            <div class="descrption">
+                                <div class="title">Selecteer je uitbetaler</div>
+                                <div class="text"><p>Opgroeien bezorgt jou via het platform Veerkracht enkele vragenlijsten. Dien deze in binnen de 4 maanden in.</p></div>
+                            </div>
+                        </div>
+                        <div class="Step">
+                            <div class="square">2</div>
+                            <div class="descrption">
+                                <div class="title">Het onderzoek loopt</div>
+                                <div class="text"><p>Opgroeien bezorgt jou via het platform Veerkracht enkele vragenlijsten. Dien deze in binnen de 4 maanden in.</p></div>
+                            </div>
+                        </div>
+                        <div class="Step">
+                            <div class="square">3</div>
+                            <div class="descrption">
+                                <div class="title">Opgroeien beslist</div>
+                                <div class="text"><p>Opgroeien bekijkt grondig alle documenten en indien mogelijk wordt je uitgenodigd voor een videogesprek.</p></div>
+                            </div>
+                        </div>
+                        <div class="Step">
+                            <div class="square">4</div>
+                            <div class="descrption">
+                                <div class="title">Je uitbetaler betaald</div>
+                                <div class="text"><p>Op basis van de beslissing van Opgroeien betaalt je uitbetaler de zorgtoeslag uit.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="center" style="margin-top:120px;">
+                <a href="#" class="button justbet" >Start je aanvraag<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="question">
+                <hr class="line">
+                <div class="PartFour">
+                    <span class="titlespan">Zorgtoeslag aanvragen</span>
+                    <h1 class="titleh2">Hoeveel zorgtoeslag krijg je?</h1>
+                    <p class="textfour">Contacteer Veerkracht op de wijze die je verkiest: per <span style="font-weight:700;">telefoon</span>,<span  style="font-weight:700;">e-mail</span> of <span  style="font-weight:700;">brief</span>.</p>
+                    <p class="textfour">
+                        Onze Groeipakketcoaches contacteren Agentschap Opgroeien om het onderzoek op te starten. Afhankelijk van de leeftijd van je kind, houden ze rekening met de situatie tot 5 jaar in het verleden. Je kan dus met terugwerkende kracht recht hebben op een zorgtoeslag.</p>
+                    <div class="Demo">
+                        <div class="Demo-img"><img src="src/assets/Content.png" alt="image"></div>
+                        <div class="text">
+                            <span> Je ontvangt vervolgens een melding van Veerkracht om je aan te melden via het portaal.</span>
+                            <span>
+                                Op het portaal ‘Veerkracht’ vul je tijdig het formulier voor psychosociale gegevens in via de knop ‘Specifieke ondersteuningsnood’. 
+                                Je kan je altijd laten bijstaan door een zorgverlener of iemand van de sociale dienst om dit formulier zo volledig mogelijk in te vullen.
+                            </span>
+                            <div class="buttons">
+                                <a href="" class="buttonD"><img src="src/assets/play-circle.png" alt="">Demo</a>
+                                <a href="" class="buttonleer">Leer meer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <p>Via het portaal kan je je behandelende arts contacteren. Samen met je arts kan je het medisch inlichtingenformulier invullen. Je arts kan dit formulier eHealth onder 'Evaluatie ondersteuningsnood Opgroeien (zorgtoeslag) - Medisch inlichtingenformulier'.</p>
+                        <p>Respecteer de deadline en bezorg Agentschap Opgroeien binnen de 4 maanden beide documenten. Heb je toch meer tijd nodig? Contacteer Agentschap Opgroeien via het nummer 02 533 13 41. Belangrijk: Je kan maximum 4 maanden uitstel vragen.</p>
+                        <p>Je kan extra specifieke vragenlijsten door andere therapeuten (logopedist, kinesitherapeut, …) laten invullen en deze opvolgen in jouw dossier op ‘Veerkracht’. Je stuurt de specifieke vragenlijsten door en vraagt of ze deze willen invullen. Hoe meer informatie je kan bezorgen, hoe beter de evaluatie kan gebeuren.</p>
+                        <p>Op basis van de informatie in de formulieren zal een arts van het Team Zorgtoeslagen bij Agentschap Opgroeien je aanvraag verwerken. Afhankelijk van de aandoening, zal je kind al dan niet uitgenodigd worden voor een videogesprek. Dit geeft de arts de mogelijkheid om enkele zaken te verduidelijken. Je kind wordt niet medisch onderzocht.</p>
+                        <p>Team Zorgtoeslagen van Agentschap Opgroeien bezorgt het resultaat van de evaluatie aan jou en aan je uitbetaler.  Zodra je uitbetaler het resultaat ontvangt, berekenen we wat dit betekent voor jou en laten we je dit weten. Afhankelijk van de beslissing is het mogelijk dat we een zorgtoeslag voor het verleden betalen met terugwerkende kracht. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="center" style="margin-top:120px;">
+                <a href="#" class="button justbet" >Start je aanvraag<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+    
+            <div class="question">
+                <hr class="line">
+                <div class="PartFive">
+                   <div class="part">
+                    <div>
+                        <span class="titlespan">Zorgtoeslag aanvragen</span>
+                        <h1 class="titleh2">Verandert de medische toestand van je kind?</h1>
+                    </div>
+                    <div>
+                        <p class="textfour">Heeft je kind meer/minder professionele hulp nodig of verandert er iets anders aan de medische toestand nadat er al een eerdere beslissing door het Team Zorgtoeslagen werd genomen? Contacteer dan meteen je uitbetaler via Veerkracht om een herziening aan te vragen.</p>
+                        <p class="textfour" style="margin-top: 20px;">Is de termijn van de vorige beslissing verstreken? Dan zal Team Zorgtoeslagen zelf een herziening opstarten. </p>
+                    </div>
+                   </div>
+                   <div class="part">
+                    <div>
+                        <h1 class="titleh2">Maak je geen zorgen wanneer de erkenning voor je kind is afgelopen.</h1>
+                    </div>
+                    <div>
+                        <p class="textfour">Agentschap Opgroeien, start dan automatisch het onderzoek voor een nieuwe erkenning. Je zal via hen formulieren ontvangen die je moet invullen. Bezorg hen tijdig de nodige documenten. Ontvangen zij die te laat? Dan is de beslissing voor een zorgtoeslag altijd negatief en moet je een nieuwe aanvraag doen.</p>
+                    </div>
+                   </div>
+                   <div class="part">
+                    <div>
+                        <h1 class="titleh2">Verandert de medische toestand van je kind?</h1>
+                    </div>
+                    <div>
+                        <p class="textfour">Het onderzoek naar een zorgtoeslag gebeurt via Team Zoë (zorgtoeslagevaluatie) van het Agentschap Opgroeien.</p>
+                        <p class="textfour" style="margin-top: 20px;">Wij hebben geen zicht op de specifieke duur van het onderzoek naar een zorgtoeslag voor jouw kindje. Wil je de exacte stand van zaken weten? Dan kan je contact opnemen met Team Zoë. </p>
+                    </div>
+                   </div>
+                </div>  
+            </div>
+            <div class="center" style="margin-top:120px;">
+                <a href="#" class="button justbet" >Start je aanvraag<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            
+            <div class="question">
+                <hr class="line">
+                <div class="PartFive">
+                   <div class="part">
+                    <div>
+                        <span class="titlespan">Zorgtoeslag aanvragen</span>
+                        <h1 class="titleh2">Maak je geen zorgen wanneer de erkenning voor je kind is afgelopen.</h1>
+                    </div>
+                    <div class="textfour">
+                        <span >Dat kan inderdaad, behalve wanneer je kind werkt…</span>
+                        <ul class="list">
+                            <li>met een studentenovereenkomst voor meer dan 600 uur per jaar (vanaf 1/1/2023, 475 uur per jaar tot 31/12/2022). </li>
+                            <li>met een gewone arbeidsovereenkomst voor meer dan 80 uur per maand</li>
+                            <li>als zelfstandige met bijdrageplicht</li>
+                        </ul>
+                        <span >Dit werk is altijd toegelaten, en vormt dus geen hinderpaal voor je toeslag:</span>
+                        <ul class="list">
+                            <li>in een maatwerkbedrijf, ook beschutte werkplaats genoemd</li>
+                            <li>in het kader van een opleiding alternerend leren</li>
+                            <li>een bezoldigde stage</li>
+                        </ul>
+                    </div>
+                   </div>
+                   <div class="part">
+                    <div>
+                        <h1 class="titleh2">Maak je geen zorgen wanneer de erkenning voor je kind is afgelopen.</h1>
+                    </div>
+                    <div>
+                        <p class="textfour">Wanneer je zoon of dochter 21 jaar is, dan stopt de zorgtoeslag en ontvang je het basisbedrag zonder zorgtoeslag. Dan zijn de algemene voorwaarden van het Groeipakket van toepassing.</p>
+                        <p class="textfour" style="margin-top: 20px;">Je kan dan wel <u>een tegemoetkoming vragen voor personen met een handicap</u>. Die aanvraag kan je opstarten wanneer je kind 20 wordt.</p>   
+                    </div>
+                   </div>
+                   <div class="part">
+                    <div>
+                        <h1 class="titleh2">Wat als je kind binnenkort een inkomensvervangende tegemoetkoming (IVT) of een integratietegemoetkoming (IT) krijgt?</h1>
+                    </div>
+                    <div>
+                        <p class="textfour">De minimumleeftijd om een IVT en/of IT te krijgen werd verlaagd naar 18 jaar. Krijgt je kind dit nog niet, maar wil je wel zo’n tegemoetkoming aanvragen? Dat kan bij de overheidsdienst voor personen met een handicap. Lees meer over een IVT of IT.</p>
+                        <p class="textfour" style="margin-top: 20px;">Vanaf 1 juni 2021 krijg je geen zorgtoeslag meer als je kind tegelijkertijd een IVT en/of IT ontvangt. Je krijgt wel het basisbedrag in je groeipakket (kinderbijslag). En dit tot wanneer je kind 21 jaar is en erkend werd door Opgroeien, of tot 25 jaar als je kind studeert.</p>
+                    </div>
+                   </div>
+                </div>  
+            </div>
+            <div class="Meerweten">
+                <h2>Meer weten over de zorgtoeslag</h2>
+                <span>Onze medewekers geven jou graag alle informatie</span>
+                <div class="buttons">
+                    <a href="#" class="buttonMeer">Meer info</a>
+                    <a href="#" class="buttonleer">Start je aanvraag</a>
+                </div>
+            </div>
+            <div class="Vragen" id="Vragen">
+                <div class="sectionVagen">
+                    <div  class="">
+                        <span class="titlespan " style="margin-top:50px;">Vragen?</span>
+                        <h2 class="titleh2">Meer weten over de zorgtoeslag</h2>
+                    </div >
+                    <p class="textfour">
+                        Neem dan zeker hiernaast een kijkje. Vind je het antwoord niet, bezoek dan onze veelgestelde vragenpagina.
+                    </p>
+                </div>
+                <div class="section">
+                    <div class="Ask-s">
+                        <div class="contAsk">
+                            <div>Hoe vraag je een zorgtoeslag aan voor een kind met autisme ?</div>
+                            <div><img src="/src/assets/plus-circle.png" alt="icon" class="toggleIconanswer" data-target="extraInfo1"></div>
+                        </div>
+                        <div class="answer hidden " id="extraInfo1">
+                            <ul >
+                                <li>Je contacteert Veerkracht en doet een aanvraag voor de zorgtoeslag. Wij sturen je aanvraag door naar de Team Zorgtoeslagevaluatie (Dienst Zoë) van Agentschap Opgroeien</li>
+                                <li>
+                                   Team Zorgtoeslagevaluatie (Team Zoë) onderzoekt of er recht is op de zorgtoeslag. 
+                                    Je zal door Team Zoë gecontacteerd worden om een vragenlijst in te vullen om de medische situatie te verduidelijken. Afhankelijk van de aandoening, 
+                                    zal je kind al dan niet uitgenodigd worden voor een videoconsult.
+                                </li>
+                                <li>Na het onderzoek delen ze de beslissing met het aantal punten mee aan jou en onze groeipakketcoaches.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Ask-s">
+                        <div class="contAsk">
+                            <div>Hoe vraag je een zorgtoeslag aan voor een kind met autisme ?</div>
+                            <div><img src="/src/assets/plus-circle.png" alt="icon" class="toggleIconanswer" data-target="extraInfo2"></div>
+                        </div>
+                        <div class="answer hidden " id="extraInfo2">
+                            <div>
+                                Je selecteert je uitbetaler via Veerkracht. Hiermee start Opgroeien jouw aanvraag voor het recht op een zorgtoeslag.Je recht hebt op een zorgtoeslag en hoeveel die bedraagt, hangt af van het aantal punten in drie pijlers:
+                            </div>
+                            <ol style="margin:25px;"> 
+                                <li style="margin-top:10px;">Pijler 1: de lichamelijke of geestelijke gevolgen</li>
+                                <li style="margin-top:10px;">Pijler 2: de impact op het functioneren van het kind (leren, communicatie, mobiliteit, zelfzorg…)</li>
+                                <li style="margin-top:10px;">Pijler 3: gevolgen voor de familiale omgeving</li>
+                            </ol>
+                            <div>De evaluerend arts van Dienst Zoë beslist over het aantal punten binnen deze 3 pijlers. </div>
+                        </div>
+                    </div>
+                    <div class="Ask-s">
+                        <div class="contAsk">
+                            <div>Hoelang duurt een zorgtoeslag aanvraag?</div>
+                            <div><img src="/src/assets/plus-circle.png" alt="icon" class="toggleIconanswer" data-target="extraInfo3"></div>
+                        </div>
+                        <div class="answer hidden " id="extraInfo3">
+                            <div>
+                                We hebben geen zicht op de duur van het onderzoek. Je kan hiervoor team Zoë van het agentschap Opgroeien contacteren, dat bevoegd is voor het onderzoek.
+                            </div>
+                            <ul style="margin:25px;"> 
+                                <li style="margin-top:10px;">Via e-mail zoe.info@kindengezin.be</li>
+                                <li style="margin-top:10px;">Via het nummer 02 533 13 41</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Ask-s">
+                        <div class="contAsk">
+                            <div>Wie kan een zorgtoeslag aanvragen?</div>
+                            <div><img src="/src/assets/plus-circle.png" alt="icon" class="toggleIconanswer" data-target="extraInfo4"></div>
+                        </div>
+                        <div class="answer hidden " id="extraInfo4">
+                            <div>
+                                Voor hoeveel jaar terug kan ik de zorgtoeslag aanvragen? Je kan een zorgtoeslag met terugwerkende kracht aanvragen. Het onderzoek gaat tot 5 jaar terug.
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="Ask-s">
+                        <div class="contAsk">
+                            <div>Wie is Team Zorgtoeslagevaluatie (Team Zoë)?</div>
+                            <div><img src="/src/assets/plus-circle.png" alt="icon" class="toggleIconanswer" data-target="extraInfo5"></div>
+                        </div>
+                        <div class="answer hidden " id="extraInfo5">
+                            <div>
+                                Team Zorgtoeslagevaluatie is een dienst binnen Agentschap Opgroeien, die zich bezighoudt met de evaluaties van de aanvragen voor een zorgtoeslag. Team zorgtoeslagevaluatie of Team Zoë in’t kort, onderzoekt alle ingediende vragenlijsten. 
+                                De Dienst Zoë duidt per onderzoek een evaluerend arts aan. Indien nodig nodigt de evaluerend arts, gezinnen uit voor een videogesprek om nog enkele onduidelijkheden weg te werken. 
+                                Nadat er een beslissing is genomen bezorgt de evaluerend arts van Team Zoë de beslissing aan het gezin en de juiste uitbetaler van het groeipakket.
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-wrapper">
+        <div  class="footer-content container">
+            <div class="footerup">
+                <span class="titlefoter">Sluit u aan bij onze nieuwsbrief</span>
+                <span style="color:#E9D7FE;">Blijf op de hoogte van het laatste nieuws, aankondigingen en artikelen.</span>
+            </div>
+            <form class="formfooter">
+                <input type="email" class="input" placeholder="Voer uw e-mailadres in" />
+                <button type="submit" value="Submit" class="">Subscribe</button>
+            </form>
+        </div>
+        <hr style="opacity:0.2;border:1px solid #505d73;">
+        <div class="footermenu container">
+            <div class="imgfooter"><img src="src/assets/w-logo.png" alt="logo"></div>
+            <div class="menu">
+                <a href="#" class="colorD6">Over Veekracht</a>
+                <a href="#">Wie zijn wij en wat doen wij ?</a>
+                <a href="#">Projecten</a>
+                <a href="#">Nieuws en pers</a>
+            </div>
+            <div class="menu">
+                <a href="#" class="colorD6">Jobs</a>
+                <a href="#">Werken voor Veerkracht</a>
+                <a href="#">Verhalen van medewerkers</a>
+                <a href="#">Veelgestelde vragen</a>
+            </div>
+            <div class="menu">
+                <a href="#" class="colorD6">Contact</a>
+                <a href="#">Contact</a>
+                <a href="#">Bereikbaarheid</a>
+            </div>
+            <div class="menu">
+                <a href="#" class="colorD6">Legaal</a>
+                <a href="#">Gebruiksovereenkomst</a>
+                <a href="#">Cookiebeleid</a>
+                <a href="#">Privacybeleid</a>
+            </div>
+        </div>
+        <div class=" under">
+            <hr class="hrfooter">
+            <div class="underfooter">
+                <div>© 2024 Veerkracht</div>
+                <div class="socialeicons">
+                    <img src="src/assets/Socialicon.png" alt="icon">
+                    <img src="src/assets/Social icon(1).png" alt="icon">
+                    <img src="src/assets/Social icon(2).png" alt="icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+    <!--Font Awesome icons-->
+    <script src="https://kit.fontawesome.com/4d740552dc.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

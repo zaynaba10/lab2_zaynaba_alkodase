@@ -1,0 +1,228 @@
+.loginSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+}
+.loginSection form{
+    width:400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding: 35px;
+    border-radius: 12px;
+    height:fit-content;
+}
+.h-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-direction: column;
+}
+.h-login img{
+    width:65px;
+    height:50px;
+}
+.cont-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.input-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.input-login div {
+    position: relative;
+    display: block;
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid #D0D5DD;
+    background-color: #fff;
+    padding: 15px 8px 15px 10px;
+    text-align: left;
+   
+}
+.input-login div input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #667085;
+    font-size: 16px;
+    width:90%   ;
+
+}
+.input-login div img{
+    position: absolute;
+    top: 53%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.color-47{
+    color: #475467;
+}
+.color-34{
+    color: #344054;
+}
+.color-66{
+    color: #667085;
+    font-weight: 600;
+}
+.color-69{
+    color:#6941C6;
+    font-weight: 600;
+}
+.checkbox-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-login{
+    display: flex;
+    gap:5px;
+}
+.buttons-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    width: 100%;
+}
+.buttons-login button {
+     width: 100%;
+     border: none;
+     height: 50px;
+     border-radius: 8px;
+     font-size:18px;
+     font-weight: 700;
+     color: white;
+     cursor:pointer;
+}
+.buttons-login button:hover{
+    opacity: 0.8;
+}
+.btn-login{
+    background-color:#7F56D9;
+}
+.btn-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FF4612;
+}
+/*profile*/
+.profile{
+    display: flex;
+    gap:6px;
+}
+.profile div img{
+    width: 40px;
+    height: 40px;
+}
+.profile .name-p{
+    color: #344054;
+    font-weight:600;
+    font-size: 16px;
+}
+.profile .email-p{
+    color:#475467;
+    font-size: 12px;
+}
+
+/*select input*/
+.input-select{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+   
+}
+.select-cont {
+
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #D0D5DD;
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.select-cont:hover {
+    outline: none;
+    box-shadow: 0 0 5px #bca6eb;
+}
+
+.input-select div select{
+    color: #667085;
+    font-weight: 600;
+    font-size: 14px;
+    border: none ;
+    outline: none ;
+    box-shadow: none;
+     width: 95%;
+     padding:15px;
+     border: none;
+}
+.options-uitbetaler{
+    width: 100%;
+    padding: 20px;
+}
+.input-select div select option{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+  }
+.input-select div select option:before{
+    padding-right:20px;
+    padding-left: 5px;
+    background:none;
+    margin-top: 20px;
+}
+.input-select div select option:hover:before {
+    display: inline;
+  }
+
+/*--------------*/
+@media (max-width: 480px) {
+    .font-14{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .profile{
+        display: none !important;
+       }
+    .profile-mobile{
+        display: flex;
+        gap:6px;
+    }
+    .profile-mobile div img{
+        width:40px;
+        height:40px;
+    }
+    .profile-mobile .name-p{
+        color: #344054;
+        font-weight:600;
+        font-size: 16px;
+    }
+    .profile-mobile .email-p{
+        color:#475467;
+        font-size: 12px;
+    }
+}

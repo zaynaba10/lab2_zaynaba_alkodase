@@ -1,0 +1,440 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/dachboard.css">
+  <title>Dashboard</title>
+</head>
+<body>
+    <div class="content">
+        <aside>
+            <div class="sidebar" id="Sidebar">
+                <div class="sidebar-p">
+                    <div class="sidebar-header">
+                        <div class="sidbar-header-cont">
+                            <img src="src/assets/Logo.png" class="logo" alt="Logo">
+                            <div id="nav-dachboar-Button" class="nav-dachboard-Button">
+                                <i class="fa-solid fa-bars fa-2x" style="color:#344054;" id="navToggleDach" aria-hidden="true"></i>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/home-line.png" alt="icon"><span>Hoofdpagina</span></a></li>
+                            <li><a href="Dashboard.html"><img src="src/assets/bar-chart-01.png" alt="icon">Overzicht</a></li>
+                            <li><a href="Status.html"><img src="src/assets/bar-chart-square-02.png" alt="icon">Status</a></li>
+                            <li>
+                                <div class="dropdown-nav-dach">
+                                    <div class="dropbtn" id="dropdownDac"><img src="src/assets/users-01.png" alt="icon">Vertrouwenspersonen<i class="fa-solid fa-chevron-down " id="iconChevronDrop"></i></div>
+                                    <div class="dropdown-content" id="dropbtnContent">
+                                    <a href="#">Overview</a>
+                                    <a href="#">Notifications</a>
+                                    <a href="#">Analytics</a>
+                                    <a href="#">reports</a>
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-p">
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/life-buoy-01.png" alt="icon">Contact</a></li>
+                            <li><a href="Dashboard4.html"><img src="src/assets/settings-01.png" alt="icon">Instellingen</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <img src="src/assets/Avatarx2.png" alt="Profile Image" />
+                        <div class="user-detail">
+                          <h3>Olivia Rhye</h3>
+                          <span>olivia@hotmail.com</span>
+                        </div>
+                        <div class="profilelog-out"><img src="src/assets/Button-log-out.png" alt="button log out"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="main-content">
+            <div class="content-hdr">
+                <div>
+                    <h1>Medische inlichtingenformulier!</h1>
+                    <div>Start de aanvraag zorgtoeslag met het invullen van het psychosociaal inlichtingsformulier.</span></div>
+                </div>
+                <div class="content-hdr-r">
+                    <img src="src/assets/search-lg.png" alt="">
+                    <button><img src="src/assets/filter-lines.png" alt="">Filters</button>
+                </div>
+            </div>
+            <div class="support-needs">
+                <div class="title-n">
+                    Documenten versturen naar de behandelende arts kan gemakkelijk en vlug via Veerkracht!
+                </div>
+                <ol>
+                    <li><span>Open het document dat je wil versturen en zoek een zorgverlener.</span></li>
+                    <li><span>Vul de naam van de zorgverlener in (arts, arts-specialist, paramedicus ...)</span></li>
+                    <li><span>Klik op 'Zoek' om de zoekopdracht te starten.</span></li>
+                    <li><span>Selecteer de zorgverlener.</span></li>
+                    <li><span>Klik op 'Bevestigen'.</span></li>
+                    <li><span>Klik op 'Doorsturen' en een bevestiging zal verschijnen bovenaan: 'Je document is succesvol verzonden'.</span></li>
+
+                </ol>
+            </div>
+            <div class="table-Status">
+                <div class="Filters">
+                    <div class="">
+                        <div style="color:#344054;font-weight:600;">Documenten</div>
+                        <div style="margin-top:5px;color:#475467;">Selecteer het Medische inlichtingsformulier om dit vervolgens door te sturen naar de Behandelende Arts.</div>
+                    </div>
+                    <div class="search-filter-t">
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                        <div class="content-hdr-r">
+                            <button><img src="src/assets/filter-lines-di.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload">
+                    <form action="/" style="display: flex;justify-content: center;flex-direction: column;">
+                        <input type="file" id="fileup" style="display:none;">
+                        <div id="uploadfileDach" class="uploadfileDach">
+                            <div class="border-upload-icon"><img src="src/assets/upload-cloud-02.png" alt=""></div>
+                            <div><span style="color:#6941C6;font-weight:600;">Klik om te uploaden</span>of sleep en drop <div style="margin-top: 8px;">PDF, PNG, JPG or GIF (max. 800x400px)</div></div>
+                        </div>
+                        <div class="uploadfileU Hidden-name-U" id="UploadfileNameS">
+                            <div style="display: flex;gap:8px;justify-content: center;align-items: center;">
+                                <i class="fa-regular fa-file fa-1x" style="color:#737d8c;"></i>
+                                <div id="fileNameU"></div>
+                            </div>
+                            <div><input type="checkbox" name="" id="" class="checkbox"> </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="Formulate">
+                    <div class="Biggest-order brder-rd">
+                        <div class="Biggest">
+                            <span style="color:#101828;font-weight:600;font-size:18px;">Bijgevoegde bestanden</span>
+                            <span class="font-size-14" style="margin-top:5px;color:#475467;">Bestanden en activia die aan dit formulier zijn gekoppeld</span>
+                        </div>
+                        <div class="Importerenbuttons">
+                            <div class="Importeren"><img src="src/assets/upload-cloud-02.png" alt="upload icon">Importeren</div>
+                            <div class="Bestand"><img src="src/assets/plus.png" alt="upload icon">Bestand</div>
+                        </div>
+                    </div>
+                    <div class="Biggest-order">
+                        <div class="Filters">
+                            <div class="button-filter font-size-14">
+                                <div id="Ziealles" class="filterbtn-click">Zie alles</div>
+                                <div id="Mijn">Mijn documenten</div>
+                                <div id ="Gedeelde">Gedeelde documenten</div>
+                            </div>
+                            <div class="search-filter">
+                                <div>
+                                    <label class="label">
+                                        <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                        <input type="text" placeholder="Zoek" /> 
+                                    </label>
+                                </div>
+                                <div class="content-hdr-r">
+                                    <button><img src="src/assets/filter-lines-di.png" alt="">Filters</button>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+                    <table id="ZieAllesTable" style="border-bottom: none !important;border-radius:0px 0px 8px 8px;">
+                        <tr style="color:#475467;font-weight:500;">
+                            <th>Bestand <i class="fa-solid fa-arrow-down "></i></th>
+                            <th>Datum upload</th>
+                            <th>Geüpload door</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypePDF.png" alt="file type pdf"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Handleiding Veerkracht</div>
+                                            <div style="color:#475467;">200 KB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">22 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div style="color:#101828;font-weight:600;">Veerkracht</div>
+                            </td>
+                            <td>
+                                <div  class="icons-action">
+                                    <i class="fa-regular fa-copy"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-pen"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypeJpeg.png" alt="file type JPEG"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Identiteitskaart</div>
+                                            <div style="color:#475467;">720 KB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">20 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div><div style="color:#101828;font-weight:600;">Mezelf</div></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div  class="icons-action">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <i class="fa-solid fa-download"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypePDF.png" alt="file type pdf"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Vragenlijst CLB</div>
+                                            <div style="color:#475467;">catalogapp.io</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">24 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div> <div style="color:#101828;font-weight:600;">Opgroeien</div></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div  class="icons-action">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <i class="fa-solid fa-download"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypePDF.png" alt="file type pdf"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Medische inlichtingsformulier</div>
+                                            <div style="color:#475467;">200 KB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">24 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div><div style="color:#101828;font-weight:600;">Opgroeien</div></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div  class="icons-action">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <i class="fa-solid fa-download"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="MijnDocumentenTable" style="border-bottom: none !important;border-radius:0px 0px 8px 8px;">
+                        <tr style="color:#475467;font-weight:500;">
+                            <th>Bestand<i class="fa-solid fa-arrow-down "></i></th>
+                            <th>Datum upload</th>
+                            <th>Geüpload door</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypeJpeg.png" alt="file type Jpeg"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Identiteitskaart</div>
+                                            <div style="color:#475467;">720 KB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">20 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div><div style="color:#101828;font-weight:600;">Mezelf</div></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div  class="icons-action">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <i class="fa-solid fa-download"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="GedeeldeTable" style="border-bottom: none !important;border-radius:0px 0px 8px 8px;">
+                        <tr style="color:#475467;font-weight:500;">
+                            <th>Bestand <i class="fa-solid fa-arrow-down "></i></th>
+                            <th>Datum upload</th>
+                            <th>Geüpload door</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypePDF.png" alt="file type pdf"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Handleiding Veerkracht</div>
+                                            <div style="color:#475467;">200 KB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">22 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div style="color:#101828;font-weight:600;">Veerkracht</div>
+                            </td>
+                            <td>
+                                <div  class="icons-action">
+                                    <i class="fa-regular fa-copy"></i>
+                                    <i class="fa-solid fa-download"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-pen"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypePDF.png" alt="file type pdf"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Vragenlijst CLB</div>
+                                            <div style="color:#475467;">catalogapp.io</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">24 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div> <div style="color:#101828;font-weight:600;">Opgroeien</div></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div  class="icons-action">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <i class="fa-solid fa-download"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <div class="file-Inventory">
+                                        <div><img src="src/assets/FiletypePDF.png" alt="file type pdf"></div>
+                                        <div class="info">
+                                            <div style="color:#101828;font-weight:600;">Medische inlichtingsformulier</div>
+                                            <div style="color:#475467;">200 KB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="color:#475467">24 Jan 2022</div>
+                            </td>
+                            <td>
+                                <div><div style="color:#101828;font-weight:600;">Opgroeien</div></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div  class="icons-action">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <i class="fa-solid fa-download"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <hr style="border: 1px solid #EAECF0;">
+                <div class="pagination-container">
+                    <div class="btn-pagination-left btn-pagination" onclick="window.location.href='Dashboard2.html';"><i class="fa-solid fa-chevron-left fa-1x"></i>Vorige</div>
+                    <ul class="pagination">
+                        <li><a href="#1">1</a></li>
+                        <li><a href="#2" style="color:#182230;" onclick="window.location.href='Dashboard2.html';">2</a></li>
+                        <li><a href="#3" onclick="window.location.href='Dashboard3.html';">3</a></li>
+                        <li><span class="dots">...</span></li>
+                        <li><a href="#8">8</a></li>
+                        <li><a href="#9">9</a></li>
+                        <li><a href="#10">10</a></li>
+                    </ul>
+                    <div  class="btn-pagination-right btn-pagination" onclick="window.location.href='Dashboard3.html';">Volgende<i class="fa-solid fa-chevron-right fa-1x"></i></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="src/dachbord.js"></script>
+    <script src="src/inlichtingenformulier.js"></script>
+     <!--Font Awesome icons-->
+     <script src="https://kit.fontawesome.com/4d740552dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

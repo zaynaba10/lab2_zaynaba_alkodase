@@ -1,0 +1,377 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/dachboard.css">
+  <title>Dashboard</title>
+</head>
+<body>
+    <div class="content">
+        <aside>
+            <div class="sidebar" id="Sidebar">
+                <div class="sidebar-p">
+                    <div class="sidebar-header">
+                        <div class="sidbar-header-cont">
+                            <img src="src/assets/Logo.png" class="logo" alt="Logo">
+                            <div id="nav-dachboar-Button" class="nav-dachboard-Button">
+                                <i class="fa-solid fa-bars fa-2x" style="color:#344054;" id="navToggleDach" aria-hidden="true"></i>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/home-line.png" alt="icon"><span>Hoofdpagina</span></a></li>
+                            <li><a href="Dashboard.html"><img src="src/assets/bar-chart-01.png" alt="icon">Overzicht</a></li>
+                            <li><a href="Status.html"><img src="src/assets/bar-chart-square-02.png" alt="icon">Status</a></li>
+                            <li>
+                                <div class="dropdown-nav-dach">
+                                    <div class="dropbtn" id="dropdownDac"><img src="src/assets/users-01.png" alt="icon">Vertrouwenspersonen<i class="fa-solid fa-chevron-down " id="iconChevronDrop"></i></div>
+                                    <div class="dropdown-content" id="dropbtnContent">
+                                    <a href="#">Overview</a>
+                                    <a href="#">Notifications</a>
+                                    <a href="#">Analytics</a>
+                                    <a href="#">reports</a>
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-p">
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/life-buoy-01.png" alt="icon">Contact</a></li>
+                            <li><a href="Dashboard4.html"><img src="src/assets/settings-01.png" alt="icon">Instellingen</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <img src="src/assets/Avatarx2.png" alt="Profile Image" />
+                        <div class="user-detail">
+                          <h3>Olivia Rhye</h3>
+                          <span>olivia@hotmail.com</span>
+                        </div>
+                        <div class="profilelog-out"><img src="src/assets/Button-log-out.png" alt="button log out"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="main-content">
+            <div class="content-hdr">
+                <div>
+                    <h1>Instellingen</h1>
+                </div>
+                <div class="content-hdr-r">
+                    <div class="search-filter-t">
+                        <div class="con-serarch">
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class="list-items">
+                    <div class="item-active" data-content="MijnGegevens">Mijn gegevens</div>
+                    <div data-content="Profiel">Profiel</div>
+                    <div data-content="Wachtwoord">Wachtwoord</div>
+                    <div data-content="Zorgteam">Zorgteam <span>2</span></div>
+                </div>
+                <div class="content-Dach">
+                    <div id="MijnGegevens" class="active-content hidden-div">
+                        <div>
+                            <h1>Mijn gegevens</h1>
+                            <span style="font-size:14;color:#475467;">Update hier uw foto en persoonlijke gegevens.</span>
+                        </div>
+                        <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                        <form class="form-Mijn">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Naam</div>
+                                <div class="w-65" style="display:flex;gap:10px; ">
+                                    <div class="input-c" style="display:flex;flex-direction: column;width:50%;">
+                                        <label for="fname" class="color-66">Voornaam</label>
+                                        <input type="text" id="voornaam" name="voornaam" placeholder="Voer voornaam in">
+                                        <span class="color-66">Bv. Bols</span>
+                                    </div>
+                                    <div class="input-c" style="display:flex;flex-direction: column;width:50%;">
+                                        <label for="fname" class="color-66">Achternaam</label>
+                                        <input type="text" id="" name="" placeholder="Voer voornaam in">
+                                        <span class="color-66">Bv. Lina</span>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="email-form-Mijn">
+                                <div class="color-700 ">E-mailadres</div>
+                                <div class="input-c w-65" style="display:flex;flex-direction: column;">
+                                    <label for="" class="color-66">E-mailadres</label>
+                                    <input type="email" id="" name="" placeholder="naam@voorbeeld.com">
+                                    <span class="color-66">Bv. Lina</span>
+                                </div> 
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="form-img-profil">
+                                <div>
+                                    <div style="display: flex;align-items: center;gap:3px;" class="color-700">Jouw foto <img src="src/assets/help-circle.png" alt=""></div>
+                                    <div class="color-66" >Dit wordt weergegeven op uw profiel.</div>
+                                </div>
+                                <div>
+                                    <img src="src/assets/Avatar(3).png" class="img-prf" alt="avater Image">
+                                </div>
+                                <div style="display: flex;gap: 10px;">
+                                    <div class="color-700">Verwijderen</div>
+                                    <div style="color:#6941C6;font-weight: 700;">Update</div>
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Domicilieadres</div>
+                                <div class="w-65" style="display:flex;flex-direction: column; gap:25px; ">
+                                    <div style="width: 100%;display: flex;gap:10px;">
+                                        <div class="input-c" style="display:flex;flex-direction: column;width:50%;">
+                                            <label for="" class="color-66">Straat en huisnummer</label>
+                                            <input type="text" id="" name="" placeholder="">
+                                            <span class="color-66">Bv. antwerpsestraat 45</span>
+                                        </div>
+                                        <div class="input-c" style="display:flex;flex-direction: column;width:50%;">
+                                            <label for=""class="color-66">Busnummer (optioneel)</label>
+                                            <input type="text" id="" name="" placeholder="">
+                                            <span class="color-66">Bv. 202</span>
+                                        </div> 
+                                    </div>
+                                    <div style="width: 100%;display: flex;gap:10px;">
+                                        <div class="input-c" style="display:flex;flex-direction: column;width:50%;">
+                                            <label for=""class="color-66">Postcode</label>
+                                            <input type="text" id="" name="" placeholder="">
+                                            <span class="color-66">Bv. 9000</span>
+                                        </div>
+                                        <div class="input-c" style="display:flex;flex-direction: column;width:50%;">
+                                            <label for="" class="color-66">Stad</label>
+                                            <input type="text" id="" name="" placeholder="">
+                                            <span class="color-66">Bv. Gent</span>
+                                        </div> 
+                                    </div>
+                                    <div>
+                                        <div class="input-c" style="display:flex;flex-direction: column;width:100%;">
+                                            <label for="" class="color-66">Taal</label>
+                                            <input type="text" id="" name="" placeholder="Nederlands" style="background-color:#F9FAFB;"disabled>
+                                            <span class="color-66">Bv. Lina</span>
+                                        </div> 
+                                    </div>  
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="form-Mijn-buttons">
+                                <div class="Annuleer">Annuleer</div>
+                                <div class="Savebtn">Opslaan</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="Profiel" class=" hidden-div">
+                        <div>
+                            <h1>Profiel</h1>
+                            <span style="font-size:14;color:#475467;">Update hier uw foto en persoonlijke gegevens.</span>
+                        </div>
+                        <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                        <form class="form-Mijn">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Gebruikersnaam</div>
+                                <div class="w-65" style="display:flex;gap:10px; ">
+                                    <div class="input-c" style="display:flex;align-items: center; width:100%;">
+                                        <div class="color-66" style="border:1px solid #D0D5DD;padding:8px;border-radius:8px 0px 0px 8px;width:30%;" >veerkracht.com/</div>
+                                        <input type="text" id="Gebruikersnaam" name="Gebruikersnaam" placeholder="olivia" style="border-left:none;border-radius:0px 8px 8px 0px !important ;width:70%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="form-img-profil">
+                                <div>
+                                    <div style="display: flex;align-items: center;gap:3px;" class="color-700">Jouw foto <img src="src/assets/help-circle.png" alt=""></div>
+                                    <div class="color-66" >Dit wordt weergegeven op uw profiel.</div>
+                                </div>
+                                <div>
+                                    <img src="src/assets/Avatar(3).png" class="img-prf" alt="avater Image">
+                                </div>
+                                <div style="display: flex;gap: 10px;">
+                                    <div class="color-700">Verwijderen</div>
+                                    <div style="color:#6941C6;font-weight: 700;">Update</div>
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Jouw uitbetaler</div>
+                                <div class="input-c w-65" style="display:flex;flex-direction: column;">
+                                    <select name="" id="" class="color-66" disabled>
+                                        <option value="INFINO" selected>INFINO</option>
+                                    </select>
+                                    <span class="color-66">De uitbetaler van je Groeipakket</span>
+                                </div> 
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700 Alternatief" style="width:30%;"  >
+                                    <div >
+                                        <div>Alternatief e-mailadres voor contact</div>
+                                        <span style="font-size:14px;color: #667085;">Voer een alternatief e-mailadres in als u via een ander e-mailadres gecontacteerd wilt worden.</span>
+                                    </div>
+                                </div>
+                                <div class="input-c w-65" style="display:flex;flex-direction: column;">
+                                    <label for="" class="color-66">E-mailadres</label>
+                                    <input type="email" id="" name="" placeholder="naam@voorbeeld.com">
+                                </div> 
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="form-Mijn-buttons">
+                                <div class="Annuleer">Annuleer</div>
+                                <div class="Savebtn">Opslaan</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="Wachtwoord" class=" hidden-div">
+                        <div>
+                            <h1>Wachtwoord</h1>
+                            <span style="font-size:14;color:#475467;">Update hier uw wachtwoord</span>
+                        </div>
+                        <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                        <form class="form-Mijn">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Huidig wachtwoord</div>
+                                <div class="w-65" style="display:flex;gap:10px;flex-direction: column; ">
+                                    <div class="password-container-h">
+                                        <input type="password" placeholder="Voer uw wachtwoord in" id="password-field">
+                                    </div>
+                                    <div style="display:flex;align-items:center;font-size:14px;gap:5px;color:#475467;">
+                                        <input type="checkbox" name="" id="">Toon wachtwoord
+                                    </div>
+                                    <div style="font-size:14px;color:#475467 ;">Uw wachtwoord moet uit minstens 8 karakters bestaan.</div>
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:18px;">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Nieuw wachtwoord</div>
+                                <div class="w-65" style="display:flex;gap:10px;flex-direction: column; ">
+                                    <div class="password-container-h">
+                                        <input type="password" placeholder="Voer uw wachtwoord in" id="password-field">
+                                    </div>
+                                    <div style="display:flex;align-items:center;font-size:14px;gap:5px;color:#475467;">
+                                        <input type="checkbox" name="Nieuwwachtwoord" id="Nieuwwachtwoord">Toon wachtwoord
+                                    </div>
+                                    <div style="font-size:14px;color:#475467 ;">Uw wachtwoord moet uit minstens 8 karakters bestaan.</div>
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:18px;">
+                            <div class="Naam-form-Mijn">
+                                <div class="color-700" >Bevestig nieuw wachtwoord</div>
+                                <div class="w-65" style="display:flex;gap:10px;flex-direction: column; ">
+                                    <div class="password-container-h">
+                                        <input type="password" placeholder="Voer uw wachtwoord in" id="password-field">
+                                    </div>
+                                    <div style="display:flex;align-items:center;font-size:14px;gap:5px;color:#475467;">
+                                        <input type="checkbox" name="Nieuwwachtwoord" id="Nieuwwachtwoord">Toon wachtwoord
+                                    </div>
+                                    <div style="font-size:14px;color:#475467 ;">Uw wachtwoord moet uit minstens 8 karakters bestaan.</div>
+                                </div>
+                            </div>
+                            <hr style="border:1px solid #EAECF0;margin-top:20px;">
+                            <div class="form-Mijn-buttons">
+                                <div class="Annuleer">Annuleer</div>
+                                <div class="Savebtn">Update wachtwoord</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="Zorgteam" class=" hidden-div">
+                        <div style="display: flex;justify-content:space-between;">
+                            <div>
+                                <h1>Zorgteam</h1>
+                                <span style="font-size:14;color:#475467;">Selecteer het kind voor wie je een zorgverlener wil toevoegen.</span>
+                            </div>
+                            <div>
+                                <div class="Annuleer voeg-toe"><i class="fa-solid fa-plus"></i> Voeg toe</div>
+                            </div>
+                        </div>
+                        <table class="tableZorgteam">
+                            <tr>
+                                <th></th>
+                                <th>Kind</th>
+                                <th>Status</th>
+                                <th>Mobiel</th>
+                                <th>Zorgteam</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Kaat Vermeiren</td>
+                                <td><span class="status-t"><span class="dot"></span>Lopend</span></td> 
+                                <td class="Mobiel-t">0478415367</td>
+                                <td  style="display: flex;gap:10px; text-align:start;justify-content:start;flex-wrap: wrap;">
+                                    <span class="Dokter Zorgteam-t">Dokter</span>
+                                    <span class="CLB Zorgteam-t">CLB</span>
+                                    <span class="Grootouder Zorgteam-t">Grootouder</span>
+                                </td>
+                                <td>
+                                    <div class="Zorgteam-icons">
+                                        <div  class="icons-action">
+                                            <i class="fa-solid fa-trash"></i>
+                                            <i class="fa-solid fa-pen"  style="margin-left:10px;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Inke Vermeiren</td>
+                                <td><span class="status-t-g"><span class="dot"></span>Goedgekeurd</span></td> 
+                                <td class="Mobiel-t">0478415367</td>
+                                <td  style="display: flex;gap:10px; text-align:start;justify-content:start;flex-wrap: wrap;">
+                                    <span class="CLB Zorgteam-t">CLB</span>
+                                    <span class="Psycholoog Zorgteam-t">Psycholoog</span>
+                                </td>
+                                <td>
+                                    <div class="Zorgteam-icons">
+                                        <div  class="icons-action">
+                                            <i class="fa-solid fa-trash"></i>
+                                            <i class="fa-solid fa-pen"  style="margin-left:10px;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+         // Select all items
+         const items = document.querySelectorAll('.list-items div');
+         const contentDivs = document.querySelectorAll('.hidden-div');
+         document.getElementById("MijnGegevens").classList.add('active-content-dach');
+         items.forEach(item => {
+            item.addEventListener('click', () => {
+                items.forEach(i => i.classList.remove('item-active'));
+                item.classList.add('item-active');
+            });
+        });
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                items.forEach(i => i.classList.remove('item-active'));
+                item.classList.add('item-active');
+                contentDivs.forEach(content => content.classList.remove('active-content-dach'));
+                const contentId = item.getAttribute('data-content');
+                document.getElementById(contentId).classList.add('active-content-dach');
+            });
+        });
+    </script>
+    <script src="src/inlichtingenformulier.js"></script>
+    <script src="src/dachbord.js"></script>
+     <!--Font Awesome icons-->
+     <script src="https://kit.fontawesome.com/4d740552dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

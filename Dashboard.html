@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/dachboard.css">
+  <title>Dashboard</title>
+</head>
+<body>
+    <div class="content">
+        <aside>
+            <div class="sidebar" id="Sidebar">
+                <div class="sidebar-p">
+                    <div class="sidebar-header">
+                        <div class="sidbar-header-cont">
+                            <img src="src/assets/Logo.png" class="logo" alt="Logo">
+                            <div id="nav-dachboar-Button" class="nav-dachboard-Button">
+                                <i class="fa-solid fa-bars fa-2x" style="color:#344054;" id="navToggleDach" aria-hidden="true"></i>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/home-line.png" alt="icon"><span>Hoofdpagina</span></a></li>
+                            <li><a href="Dashboard.html"><img src="src/assets/bar-chart-01.png" alt="icon">Overzicht</a></li>
+                            <li><a href="Status.html"><img src="src/assets/bar-chart-square-02.png" alt="icon">Status</a></li>
+                            <li>
+                                <div class="dropdown-nav-dach">
+                                    <div class="dropbtn" id="dropdownDac"><img src="src/assets/users-01.png" alt="icon">Vertrouwenspersonen<i class="fa-solid fa-chevron-down " id="iconChevronDrop"></i></div>
+                                    <div class="dropdown-content" id="dropbtnContent">
+                                    <a href="">Overview</a>
+                                    <a href="#">Notifications</a>
+                                    <a href="#">Analytics</a>
+                                    <a href="#">reports</a>
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-p">
+                    <div class="sidebar-links">
+                        <ul>
+                            <li><a href="#"><img src="src/assets/life-buoy-01.png" alt="icon">Contact</a></li>
+                            <li><a href="Dashboard4.html"><img src="src/assets/settings-01.png" alt="icon">Instellingen</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <img src="src/assets/Avatarx2.png" alt="Profile Image" />
+                        <div class="user-detail">
+                          <h3>Olivia Rhye</h3>
+                          <span>olivia@hotmail.com</span>
+                        </div>
+                        <div class="profilelog-out"><img src="src/assets/Button-log-out.png" alt="button log out"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="main-content">
+            <div class="content-hdr">
+                <div>
+                    <h1>Welkom!</h1>
+                    <div>Start de aanvraag zorgtoeslag met het invullen van het <span>psychosociaal inlichtingsformulier.</span></div>
+                </div>
+                <div class="content-hdr-r">
+                    <img src="src/assets/search-lg.png" alt="">
+                    <button><img src="src/assets/filter-lines.png" alt="">Filters</button>
+                </div>
+            </div>
+            <div class="support-needs">
+                <div class="title-n">
+                    Hieronder vind je overzicht van de informatie die Opgroeien nodig heeft om de ondersteuningsnood van je kind te kunnen beoordelen.
+                </div>
+                <ul>
+                    <li><span>Verplicht:</span> Deze formulieren zijn noodzakelijk om de evaluatie te kunnen opstarten.</li>
+                    <li><span>Aanbevolen:</span> Deze vragenlijsten zijn nodig om de informatie die je invulde in het psychosociaal inlichtingsformulier te verduidelijken.</li>
+                </ul>
+            </div>
+            <div class="table-Status">
+                <div class="Filters">
+                    <div class="button-filter">
+                        <div class="btn-f-v filterbtn-click" id="showVerplicht">Verplicht</div>
+                        <div  class="btn-f-a" id="showAanbevolen">Aanbevolen</div>
+                    </div>
+                    <div class="search-filter">
+                        <div>
+                            <label class="label">
+                                <img src="src/assets/search-lg.png" class="icon" alt="icon">
+                                <input type="text" placeholder="Zoek" /> 
+                            </label>
+                        </div>
+                        <div class="content-hdr-r">
+                            <button><img src="src/assets/filter-lines-di.png" alt="">Filters</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Formulate">
+                    <table id="Verplicht">
+                        <tr >
+                            <th>Formulieren</th>
+                            <th>Ingediend</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>Psychosociaal inlichtingsformulier</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="0" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted" onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>Medische inlichtingsformulier</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted" onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="Aanbevolen">
+                        <tr >
+                            <th>Formulieren</th>
+                            <th>Ingediend</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>Mobiele begleiding</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="0" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted" onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>Therapie in een multidisciplinaire setting</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="0" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted"onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>Therapie op zelfstandige basis</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="0" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted"onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>School of CLB</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="0" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted" onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" name="" id="" class="checkbox">
+                                    <span>Bijkomende medische gegevens</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="submitted"><img src="src/assets/x.png" alt="x">Niet ingediend</div>
+                            </td>
+                            <td>
+                                <div><progress id="file" value="0" max="100"> 0% </progress>0%</div>
+                            </td>
+                            <td>
+                                <div  class="submitted" onclick="window.location.href='Dashboard2.html';">Open <img src="src/assets/chevron-right.png" alt=""></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="src/dachbord.js"></script>
+    <script src="src/buttonDachboard.js"></script>
+     <!--Font Awesome icons-->
+     <script src="https://kit.fontawesome.com/4d740552dc.js" crossorigin="anonymous"></script>
+</body>
+</html>
